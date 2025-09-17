@@ -1,0 +1,14 @@
+@use '../utils/index' as *;
+
+.header {
+    background-color: $bg-dark;
+    color: $text-light;
+    width: 100%;
+    @include flexBox(null, center, null, null);
+    img {
+        width: 100%;
+        height: auto;
+        max-height: 150px;
+        object-fit: stretch; 
+    }
+}

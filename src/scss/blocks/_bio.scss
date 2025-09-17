@@ -1,0 +1,52 @@
+@use '../utils/utils' as *;
+
+.bio {
+  width: 100%;
+  @include flexBox(null, center, null, null);  
+  padding: clamp(16px, 2.5vw, 32px) 0;
+  &#bio { 
+    scroll-margin-top: 80px; 
+  }
+  &__wrap {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: minmax(240px, 380px) 1fr; /* image | text */
+    align-items: center;
+    gap: clamp(16px, 3vw, 40px);
+    margin: 0 auto;
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__media {
+    border-radius: 12px;
+    padding: clamp(8px, 1vw, 12px);
+    @include flexBox(null, center, center, null);
+    img {
+      display: block;
+      width: 100%;
+      height: auto;        
+      max-height: 520px;   
+      object-fit: cover;   
+      border-radius: 8px;
+    }
+    @media (max-width: 900px) {
+      justify-content: center;
+    }
+  }
+  &__content {
+    background-color: $text-light;
+    border-radius: 12px;
+    padding: clamp(16px, 2vw, 24px);
+    color: $bg-dark;
+  }
+  &__title {
+    text-align: center;
+    font-size: clamp(1.25rem, 0.8rem + 1.5vw, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+}
+
+

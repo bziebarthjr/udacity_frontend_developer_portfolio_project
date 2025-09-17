@@ -1,0 +1,10 @@
+@use '../utils/utils' as *;
+
+
+a.skip__link {
+    color: $text-light;
+    text-decoration: none;
+    &:hover {
+        color: $hover_color;
+    }
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="420" height="720" viewBox="0 0 420 720" role="img" aria-labelledby="title desc">
+  <title id="title">Career Roadmap infographic</title>
+  <desc id="desc">Vertical roadway timeline with five milestones: 20 Years Customer Service; 4 Years Customer Service Management; 10 Years FEMA Urban Search &amp; Rescue; 12+ Performance Awards; 2 Innovation Awards.</desc>
+
+  <!-- ====== Editable design tokens ======
+       Change these fills/strokes in your editor to re-theme.
+       Card BG: #4A4A4A
+       Road:    #333333
+       Dashes:  #F2F2F2
+       Connector lines: #E0E0E0
+       Stop fill: #14B8A6
+       Stop outline/text: #FFFFFF / #FFFFFF
+  ====================================== -->
+  
+  <!-- Background card -->
+  <rect x="16" y="16" rx="28" ry="28" width="388" height="688" fill="#4A4A4A"/>
+  
+  <!-- Title -->
+  <text x="210.0" y="48" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">Career Roadmap</text>
+  
+  <!-- Road body -->
+  <rect x="88" y="76" rx="40.0" ry="40.0"
+        width="80" height="598" fill="#333333"/>
+        
+  <!-- Center dashed line -->
+  <line x1="128" y1="84" x2="128" y2="666"
+        stroke="#F2F2F2" stroke-width="6" stroke-dasharray="18 16" stroke-linecap="round"/>
+
+
+  <!-- Stop 1 -->
+  <circle cx="128" cy="76" r="12" fill="#14B8A6" stroke="#FFFFFF" stroke-width="3"/>
+
+  <line x1="146" y1="76" x2="386" y2="76" stroke="#E0E0E0" stroke-width="2"/>
+
+  <text id="label-1" x="154" y="82" font-family="Inter, Segoe UI, Arial, sans-serif"
+        font-size="20" font-weight="700" fill="#FFFFFF">
+    <tspan x="154" dy="0">20 Years Customer Service</tspan>
+  </text>
+
+
+  <!-- Stop 2 -->
+  <circle cx="128" cy="225" r="12" fill="#14B8A6" stroke="#FFFFFF" stroke-width="3"/>
+
+  <line x1="146" y1="225" x2="386" y2="225" stroke="#E0E0E0" stroke-width="2"/>
+
+  <text id="label-2" x="154" y="209" font-family="Inter, Segoe UI, Arial, sans-serif"
+        font-size="20" font-weight="400" fill="#FFFFFF">
+    <tspan x="154" dy="0">4 Years Customer Service</tspan>
+<tspan x="154" dy="22">Management</tspan>
+  </text>
+
+
+  <!-- Stop 3 -->
+  <circle cx="128" cy="375" r="12" fill="#14B8A6" stroke="#FFFFFF" stroke-width="3"/>
+
+  <line x1="146" y1="375" x2="386" y2="375" stroke="#E0E0E0" stroke-width="2"/>
+
+  <text id="label-3" x="154" y="359" font-family="Inter, Segoe UI, Arial, sans-serif"
+        font-size="20" font-weight="400" fill="#FFFFFF">
+    <tspan x="154" dy="0">10 Years FEMA Urban Search &</tspan>
+<tspan x="154" dy="22">Rescue</tspan>
+  </text>
+
+
+  <!-- Stop 4 -->
+  <circle cx="128" cy="524" r="12" fill="#14B8A6" stroke="#FFFFFF" stroke-width="3"/>
+
+  <line x1="146" y1="524" x2="386" y2="524" stroke="#E0E0E0" stroke-width="2"/>
+
+  <text id="label-4" x="154" y="530" font-family="Inter, Segoe UI, Arial, sans-serif"
+        font-size="20" font-weight="400" fill="#FFFFFF">
+    <tspan x="154" dy="0">12+ Performance Awards</tspan>
+  </text>
+
+
+  <!-- Stop 5 -->
+  <circle cx="128" cy="674" r="12" fill="#14B8A6" stroke="#FFFFFF" stroke-width="3"/>
+
+  <line x1="146" y1="674" x2="386" y2="674" stroke="#E0E0E0" stroke-width="2"/>
+
+  <text id="label-5" x="154" y="680" font-family="Inter, Segoe UI, Arial, sans-serif"
+        font-size="20" font-weight="400" fill="#FFFFFF">
+    <tspan x="154" dy="0">2 Innovation Awards</tspan>
+  </text>
+
+</svg>

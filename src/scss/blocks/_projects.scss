@@ -1,0 +1,91 @@
+@use '../utils/utils' as *;
+
+.projects {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: clamp(16px, 2vw, 32px);
+  color: $bg-dark;
+  background: transparent;
+  &#projects { 
+    scroll-margin-top: 80px; 
+  }
+  &__title {
+    @include flexBox(null, center, center, null);
+    font-size: clamp(1.5rem, 1rem + 2vw, 2.25rem);
+    font-weight: 700;
+    margin-bottom: clamp(12px, 1.5vw, 20px);
+    background: $text-light;
+    color: $bg-dark;
+    height: 2rem; 
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(12px, 2vw, 24px);
+    margin: 0 auto;
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &__card {
+    &--cancelled:hover {
+      background: $hover_color;
+      color: $bg-dark;
+    }
+    &--information:hover {
+      background: $hover_color;
+      color: $bg-dark;
+    }
+    &--dashboard:hover {
+      background: $hover_color;
+      color: $bg-dark;
+    }
+    background: $text-light;
+    border: 1px solid $text-light;
+    border-radius: 12px;
+    padding: clamp(12px, 1.6vw, 20px);
+    box-shadow: 0 2px 10px rgba(0,0,0,.06);
+    @include flexBox(column, null, null, null);
+    min-width: 0; 
+    h2 {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+    p, ul { margin-top: 8px; }
+    ul { padding-left: 18px; }
+  }
+  &__image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4f4f4;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  @media (max-width: 480px) {
+    padding-inline: 12px;
+  }
+  &__button {
+    @include flexBox(null, center, center, null);
+    margin-inline: auto;
+    width: fit-content;
+    padding: .5rem 1rem;
+    font-size: clamp(1.25rem, 0.75rem + 1.25vw, 1.25rem);
+        font-weight: 700;
+    width: 20%;
+    margin-top: clamp(12px, 1.5vw, 20px);
+    margin-bottom: clamp(12px, 1.5vw, 20px);
+    background: $text-light;
+    color: $bg-dark;
+    height: 2rem; 
+    border-radius: 1rem;
+  }
+}

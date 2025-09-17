@@ -1,0 +1,17 @@
+// import base modules
+@use '../scss/base/typography';
+@use './base/resets';
+@use './base/base';
+
+
+// import utils
+@use './utils/utils';
+
+// import components
+@use './blocks/header';
+@use './blocks/nav';
+@use './blocks/bio';
+@use './blocks/projects';
+@use './blocks/skills';
+@use './blocks/footer';
+@use './blocks/skip';

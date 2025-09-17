@@ -1,0 +1,15 @@
+@use '../utils/utils' as *;
+
+.footer { 
+    background-color: $bg-dark;
+    border: 4px solid $text-light;
+    p {
+        padding-top: 8px;
+        font-size: 1.25rem;
+        text-align: center;
+        color: $text-light
+    }
+}
+
+
+

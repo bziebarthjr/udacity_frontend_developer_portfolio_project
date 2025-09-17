@@ -1,0 +1,14 @@
+{
+  "name": "one_page_portfolio",
+  "version": "1.0.0",
+  "description": "udacity portfolio project",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass src/scss/main.scss dist/main.css --watch --no-source-map"
+  },
+  "author": "Bruce Ziebarth",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.91.0"
+  }
+}
